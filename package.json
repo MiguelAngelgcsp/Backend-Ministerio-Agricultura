@@ -1,0 +1,29 @@
+{
+  "name": "siga-backend",
+  "version": "1.0.0",
+  "description": "Backend REST del Sistema de Información y Gestión Agropecuaria (SIGA) - MADR",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check-db": "node scripts/check-db.js",
+    "seed-passwords": "node scripts/set-passwords.js",
+    "test": "node tests/smoke.js"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "mysql2": "^3.24.6",
+    "zod": "^3.25.76"
+  }
+}
